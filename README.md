@@ -19,7 +19,7 @@ What you need is:
 
 2. Schedule the script in crontab to execute every N=15 minutes, i.e: crontab -e and include the below line:
 
-<code>*/15 * * * * /usr/bin/python /home/pi/python/ftp.py</code>
+    <code>*/15 * * * * /usr/bin/python /home/pi/python/ftp.py</code>
 
 3. The script will upload the pi_uptime.txt file with status info to the external server which then can be processed by a website
  
