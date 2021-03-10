@@ -19,8 +19,8 @@ As a next step I'd like to have a email notification if the Pi goes offline (i.e
  
 <h3>STEPS</h3>
 
-1. On your Raspberry Pi, create python script <b>ftp.py</b> (make it executable by chmod +x) which will gather data and upload it to the external server via FTP
-2. Schedule the script in crontab to execute every 15 minutes: crontab -e and include the below line:
+1. On your Raspberry Pi, create python script <b>ftp.py</b> (make it executable by chmod +x) which will gather and upload data to the external server via FTP
+2. Schedule the script in crontab to execute every 15 minutes: crontab -e and include the below line
 
     <code>*/15 * * * * /usr/bin/python /home/pi/python/ftp.py</code>
 
