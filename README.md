@@ -15,14 +15,17 @@ What you need is:
  
 <h3>STEPS</h3>
 
-1. Create python script on the Raspberry which will gather data and upload it to the external server via FTP: ftp.py (make it executable by chmod +x)
+1. Create python script on the Raspberry which will gather data and upload it to the external server via FTP: <b>ftp.py</b> (make it executable by chmod +x)
 
 2. Schedule the script in crontab to execute every 15 minutes: crontab -e and include the below line:
 
     <code>*/15 * * * * /usr/bin/python /home/pi/python/ftp.py</code>
 
-3. The executed script will upload the pi_uptime.txt text file with status info to the external server which then can be processed
+3. The executed script will upload the pi_uptime.txt text file with status like timestamp and uptime info to the external server
  
-4. Create website to display the data: index.php
+4. Create website to display the data: <b>index.php</b>
 
 5. Open the website and view the results.
+
+My initial idea was to send the information to the external dashing (or smashing) dashboard but I was unable to make it work on my godaddy hosted webserver, so I made just a single tile. This way I can quickly check on my mobile if the Pi is up.
+As a next step I'd like to have a email notification if the Pi goes offline (i.e heartbeat was longer than 30 min ago)
