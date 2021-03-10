@@ -27,5 +27,5 @@ What you need is:
 
 5. Open the website and view the results.
 
-My initial idea was to send the information to the external dashing (or smashing) dashboard but I was unable to make it work on my godaddy hosted webserver, so I made just a single tile. This way I can quickly check on my mobile if the Pi is up.
-As a next step I'd like to have a email notification if the Pi goes offline (i.e heartbeat was longer than 30 min ago)
+<sup>My initial idea was to send the information to the external dashing or smashing https://github.com/Smashing/smashing dashboard but I was unable to make it work on my godaddy hosted webserver, so I made just a single tile. This way I can quickly check on my mobile if the Pi is up.
+As a next step I'd like to have a email notification if the Pi goes offline (i.e heartbeat was longer than 30 min ago)</sup>
