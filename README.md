@@ -15,14 +15,14 @@ What you need is:
  
 <h3>STEPS</h3>
 
-1. Create python script on the Raspberry to gather data and upload to the external server via FTP: ftp.py (make it executable by chmod +x)
+1. Create python script on the Raspberry which will gather data and upload it to the external server via FTP: ftp.py (make it executable by chmod +x)
 
-2. Schedule the script in crontab to execute every N=15 minutes, i.e: crontab -e and include the below line:
+2. Schedule the script in crontab to execute every 15 minutes: crontab -e and include the below line:
 
     <code>*/15 * * * * /usr/bin/python /home/pi/python/ftp.py</code>
 
-3. The script will upload the pi_uptime.txt file with status info to the external server which then can be processed by a website
+3. The executed script will upload the pi_uptime.txt text file with status info to the external server which then can be processed
  
 4. Create website to display the data: index.php
 
-5. Done.
+5. Open the website and view the results.
