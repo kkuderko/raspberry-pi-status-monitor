@@ -1,6 +1,6 @@
 <h1>Raspberry Pi Status Monitor</h1>
 
-This is simple idea how to monitor your Raspberry Pi status remotely via website located outside of your Raspberry
+This is a simple idea how to monitor your Raspberry Pi status remotely via website located outside of your Raspberry
 
 ![alt text](https://github.com/kkuderko/raspberry-pi-status-monitor/blob/main/screenshot01.png)
 
@@ -13,6 +13,7 @@ My initial idea was to send the information to the external dashing or smashing 
 As a next step I'd like to have a email notification if the Pi goes offline (i.e heartbeat was longer than 30 min ago)
 
 <h3>What you need is:</h3>
+
 - raspberry pi
 - webserver with FTP (i.e. some hosting)
  
