@@ -9,7 +9,10 @@ In situations when your Pi is behind the firewall, you can't or you don't want t
 The Raspberry would send its status to the external FTP server and from there the data would be displayed on the website.
 This will give you a quick glimpse if your Pi is up and running and you can incorporate this information into some wall dashboard for example.
 
-What you need is:
+My initial idea was to send the information to the external dashing or smashing https://github.com/Smashing/smashing dashboard but I was unable to make it work on my godaddy hosted webserver, so I made just a single tile. This way I can quickly check on my mobile if the Pi is up.
+As a next step I'd like to have a email notification if the Pi goes offline (i.e heartbeat was longer than 30 min ago)
+
+<h3>What you need is:</h3>
 - raspberry pi
 - webserver with FTP (i.e. some hosting)
  
@@ -26,6 +29,3 @@ What you need is:
 4. Create website to display the data: <b>index.php</b>
 
 5. Open the website and view the results.
-
-<sup>My initial idea was to send the information to the external dashing or smashing https://github.com/Smashing/smashing dashboard but I was unable to make it work on my godaddy hosted webserver, so I made just a single tile. This way I can quickly check on my mobile if the Pi is up.
-As a next step I'd like to have a email notification if the Pi goes offline (i.e heartbeat was longer than 30 min ago)</sup>
