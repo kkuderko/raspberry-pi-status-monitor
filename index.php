@@ -58,24 +58,26 @@ $date_pi_last_heartbeat = new DateTime($lines[0]);
 $heartbeat_interval = date_diff($date_pi_last_heartbeat, $date_now);
 $date_pi_last_boot = new DateTime($lines[1]);
 $boot_interval = date_diff($date_pi_last_boot, $date_now);
-
 $to_time = strtotime(date("Y-m-d H:i:s"));
 $boot_from_time = strtotime($lines[1]);
 $boot_interval_min = round(abs($to_time - $boot_from_time) / 60,0);
 $heartbeat_from_time = strtotime($lines[0]);
 $heartbeat_interval_min = round(abs($to_time - $heartbeat_from_time) / 60,0);
+$pi_temperature = round((int)$lines[3] / 1000,0);
 
 $heartbeat_color = "#ffffff";
 $last_boot_color = "#ffffff";
+$temperature_color = "#ffffff";
 if (($heartbeat_interval_min >= 0) && ($heartbeat_interval_min <= 10)) $heartbeat_color = "#00cc66";
 else if (($heartbeat_interval_min >= 11) && ($heartbeat_interval_min <= 30)) $heartbeat_color = "#fad83e";
 else if ($heartbeat_interval_min >= 31) $heartbeat_color = "#ff4d4d";
 
 echo "<div class=\"square-box\"><div class=\"square-content\">";
-echo "<div class=\"square-title\">".$lines[3]."</div>";
+echo "<div class=\"square-title\">".$lines[4]."</div>";
 echo "<img class=\"square-image\" src=\"raspberry_pi_logo.png\" width=\"80\" height=\"100\"><br>";
 echo "<div class=\"square-text\">Heartbeat: <span style=\"color: $heartbeat_color\">".$heartbeat_interval->format('%a d, %h h, %i min, %s sec ago')."</span></div>";
 echo "<div class=\"square-text\">Uptime: <span style=\"color: $last_boot_color\">".$lines[2]."</span></div>";
+echo "<div class=\"square-text\">CPU Temperature: <span style=\"color: $temperature_color\">".$pi_temperature."</span> &#8451;</div>";    
 echo "<div class=\"updated-at\">Updated at: ".date("Y-m-d H:i:s")."</div>";
 echo "</div></div>";
 ?>
