@@ -2,7 +2,7 @@
 
 This is a simple idea how to monitor your Raspberry Pi status remotely via website located outside of your Raspberry
 
-![alt text](https://github.com/kkuderko/raspberry-pi-status-monitor/blob/main/screenshot011.png)
+![alt text](https://github.com/kkuderko/raspberry-pi-status-monitor/blob/main/screenshot01.png)
 
 In situations when your Pi is behind the firewall, you can't or you don't want to access it from public internet but you'd still like to know it's current status.
 
