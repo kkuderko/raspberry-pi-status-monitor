@@ -16,7 +16,7 @@ My initial idea was to send the information to the external dashing or smashing 
 - raspberry pi
 - webserver with FTP (i.e. some hosting)
  
-<h3>STEPS</h3>
+<h3>Steps</h3>
 
 1. On your Raspberry Pi, create python script <b>ftp.py</b> (make it executable by chmod +x) which will gather and upload data
 2. Schedule the script in crontab to execute every 15 minutes: crontab -e and include the below line
@@ -27,9 +27,10 @@ My initial idea was to send the information to the external dashing or smashing 
 4. On your web server, create website <b>index.php</b> to display the data
 5. Open your website and view the results.
 
-<h3>EMAIL ALERTS (BONUS)</h3>
+<h3>Email Alerts (Bonus)</h3>
 My webserver will check the heartbeat file and send the email alert if the file was received longer than 30min ago.
 This can be done via shell script <b>email_alert.sh</b>
 Similarily, we can schedule the script in crontab to run every 15 mins.
+
   <code>*/15 * * * * /home/kkuderko/public_html/pi/email_alert.sh</code>
   
