@@ -30,6 +30,7 @@ My initial idea was to send the information to the external dashing or smashing 
 <h3>Email Alerts (Bonus)</h3>
 My webserver will check the heartbeat file and send the email alert if the file was received longer than 30min ago.
 This can be done via shell script <b>email_alert.sh</b>
+
 Similarily, we can schedule the script in crontab to run every 15 mins.
 
   <code>*/15 * * * * /home/kkuderko/public_html/pi/email_alert.sh</code>
