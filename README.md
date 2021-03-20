@@ -10,7 +10,6 @@ The Raspberry would send its status to the external FTP server and from there th
 This will give you a quick glimpse if your Pi is up and running and you can incorporate this information into some wall dashboard for example.
 
 My initial idea was to send the information to the external dashing or smashing https://github.com/Smashing/smashing dashboard but I was unable to make it work on my godaddy hosted webserver, so I made just a single tile. This way I can quickly check on my mobile if the Pi is up.
-As a next step I'd like to have a email notification if the Pi goes offline (i.e heartbeat was longer than 30 min ago)
 
 <h3>What you need is:</h3>
 
@@ -27,3 +26,10 @@ As a next step I'd like to have a email notification if the Pi goes offline (i.e
 3. The executed script will upload the pi_uptime.txt text file with status like timestamp and uptime info to the external server
 4. On your web server, create website <b>index.php</b> to display the data
 5. Open your website and view the results.
+
+<h3>EMAIL ALERTS (BONUS)</h3>
+My webserver will check the heartbeat file and send the email alert if the file was received longer than 30min ago.
+This can be done via shell script <b>email_alert.sh</b>
+Similarily, we can schedule the script in crontab to run every 15 mins.
+  <code>*/15 * * * * /home/kkuderko/public_html/pi/email_alert.sh</code>
+  
