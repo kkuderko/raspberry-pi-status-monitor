@@ -6,13 +6,13 @@ This is an addition to this main branch to monitor Windows PC too
 
 win_stats.ps1 powershell script gets executed every 15min by Windows Task Scheduler
 
-Make sure the user to run the task with have anough permissions to execute script.
+Make sure the user to run the task with have enough permissions to execute script.
 
 Scheduled Task General properties:
 
 Run whether user is logged on or not: Enabled
 
-Run with highest privileges
+Run with highest privileges: Enabled
 
 Actions:
 
