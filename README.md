@@ -1,4 +1,4 @@
-<h1>Raspberry Pi Status Monitor</h1>
+<h1>Raspberry Pi Status Monitor V2</h1>
 
 This is a simple idea how to monitor your Raspberry Pi status remotely via website located outside of your Raspberry
 
