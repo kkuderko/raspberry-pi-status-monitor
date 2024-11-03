@@ -1,6 +1,6 @@
 <h1>Raspberry Pi Status Monitor</h1>
 
-UPDATE: check the ![V2](https://github.com/kkuderko/raspberry-pi-status-monitor/tree/v2) branch of this script for updated monitoring
+UPDATE: check the ![V2](https://github.com/kkuderko/raspberry-pi-status-monitor/tree/v2) branch of this repo for updated monitoring
 
 This is a simple idea how to monitor your Raspberry Pi status remotely via website located outside of your Raspberry
 
