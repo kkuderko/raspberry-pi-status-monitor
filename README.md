@@ -5,9 +5,13 @@ This is an addition to this main branch to monitor Windows PC too
 ![alt text](https://github.com/kkuderko/raspberry-pi-status-monitor/blob/v2/screenshot02.png)
 
 win_stats.ps1 powershell script gets executed every 15min by Windows Task Scheduler
+
 Task options:
 
 Action: Start a program
+
 Program/script: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+
 Add arguments: -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Bypass -File "c:\scripts\win_stats.ps1"
+
 Start in: c:\scripts\
