@@ -2,4 +2,4 @@
 
 This is an addition to this main branch to monitor Windows PC too
 
-![alt text](https://github.com/kkuderko/raspberry-pi-status-monitor/blob/main/screenshot02.png)
+![alt text](https://github.com/kkuderko/raspberry-pi-status-monitor/blob/v2/screenshot02.png)
